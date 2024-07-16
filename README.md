@@ -3,7 +3,7 @@ Só um projeto de uma overlay que eu cansei de tentar fazer... EU ODEIO FRONT-EN
 
 **RUN:**
 1. Clone esse repositório (git clone) ou baixe o arquivo .zip e extraia
-2. Acesse o diretório de onde você clonou/extraiu o arquivo e abra o terminal.
+2. Acesse o diretório onde você clonou/extraiu o arquivo e abra o terminal.
 3. Use os seguintes comandos no terminal: `npm install` e depois `npm start`.
 
 
