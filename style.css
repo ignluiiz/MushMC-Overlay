@@ -1,0 +1,210 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+.title-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  -webkit-app-region: drag; /* Makes the title bar draggable */
+}
+
+.title-bar button,
+.title-bar a {
+  -webkit-app-region: no-drag; /* Makes buttons and links clickable */
+}
+
+.logo {
+  height: 50px;
+  border-radius: 50%;
+}
+
+.left-controls {
+  display: flex;
+  align-items: center;
+}
+
+.discord-link,
+.settings-btn {
+  color: white;
+  margin-left: 15px;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.discord-link:hover {
+  color: #7289da;
+}
+
+.settings-btn i {
+  transition: transform 0.3s ease;
+}
+
+.settings-btn:hover i {
+  transform: rotate(90deg);
+}
+
+.window-controls {
+  display: flex;
+}
+
+.window-control {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+.window-control:hover {
+  color: #ff5555;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav input {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+  transition: background 0.3s ease;
+}
+
+nav input::placeholder {
+  color: #ddd;
+}
+
+nav input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+#stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.stats-row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 10px;
+  gap: 20px;
+}
+
+.header .stat-item {
+  font-weight: bold;
+}
+
+.stat-item {
+  flex: 1;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+  transition: background 0.3s ease;
+}
+
+.stat-item:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+#player-list {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#player-list .stats-row {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+#player-list .stats-row:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+#config {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 100%;
+  display: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#config h2 {
+  margin-top: 0;
+}
+
+#config label,
+#config input,
+#config select {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+}
+
+#config button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  background: #7289da;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#config button:hover {
+  background: #5a6ea8;
+}
+
+.config-hidden {
+  display: none;
+}

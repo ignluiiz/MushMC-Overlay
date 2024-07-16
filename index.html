@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minecraft Overlay</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <div class="title-bar">
+    <div class="left-controls">
+      <img src="assets/logo.png" alt="Logo" class="logo">
+      <a href="https://discord.com" target="_blank" class="discord-link">
+        <i class="fab fa-discord"></i>
+      </a>
+      <button id="settings" class="settings-btn">
+        <i class="fas fa-cog"></i>
+      </button>
+    </div>
+    <div class="window-controls">
+      <button id="minimize" class="window-control"><i class="fas fa-minus"></i></button>
+      <button id="close" class="window-control"><i class="fas fa-times"></i></button>
+    </div>
+  </div>
+  <div id="stats">
+    <div class="stats-row header">
+      <div class="stat-item">JOGADOR</div>
+      <div class="stat-item">NÍVEL</div>
+      <div class="stat-item">WS</div>
+      <div class="stat-item">FKDR</div>
+      <div class="stat-item">WLR</div>
+      <div class="stat-item">FINALS</div>
+      <div class="stat-item">WINS</div>
+    </div>
+    <div id="player-list"></div>
+  </div>
+
+  <div id="config" class="config-hidden">
+    <h2>Configurações</h2>
+    <label for="client-select">Selecionar Client:</label>
+    <select id="client-select">
+      <option value="client1">Client 1</option>
+      <option value="client2">Client 2</option>
+    </select>
+    <label for="log-path">Caminho para o arquivo latest.log:</label>
+    <input type="text" id="log-path">
+    <label for="keybind">Keybind para esconder overlay:</label>
+    <input type="text" id="keybind">
+    <button id="save-config">Salvar Configurações</button>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
