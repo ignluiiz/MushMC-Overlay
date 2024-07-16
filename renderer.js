@@ -107,7 +107,7 @@ async function fetchPlayerStats(player) {
         const response = await fetch(`https://mush.com.br/api/player/${player}`);
         const data = await response.json();
 
-        console.log(data.response)
+        /* console.log(data.response) */
 
         if (!data.success || !data.response) {
             return {
